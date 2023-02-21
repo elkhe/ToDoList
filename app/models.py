@@ -9,6 +9,7 @@ from flask_login import UserMixin
 def load_user(id):
     return User.query.get(int(id))
 
+#lol
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)

@@ -1,0 +1,10 @@
+venv
+.vscode
+.env
+test.py
+__pycache__/
+.cpython
+*.py[cod]
+app.db
+.flaskenv
+migrations/

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    {{ super() }}
+    <form action="{{ url_for('change', id=id) }}" method="POST" novalidate>
+       {{ form.hidden_tag() }}
+        <p>Change data
+        {{ form.text }}
+        {{ form.submit() }}
+    </form>
+{% endblock %}
